@@ -11,3 +11,8 @@ function exceptionFailSucces($message, $success = 0)
 {
     throw new \App\Exceptions\ExceptionFailSucces($message, $success);
 }
+
+function myTrans($text)
+{
+    return $text;
+}
