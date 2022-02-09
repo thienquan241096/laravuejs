@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\Auth\LoginController;
 use App\Http\Controllers\TestController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -20,3 +21,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::post('/test', [TestController::class, 'message']);
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::post('/login', [LoginController::class, 'login']);
+    Route::post('/check-token', [LoginController::class, 'checkToken']);
+});
