@@ -32,8 +32,7 @@ class LoginController extends Controller
             'message' => 'Successful',
             'token' => $token,
             'user_info' => $user
-
-    ]);
+        ]);
     }
 
     public function checkToken()

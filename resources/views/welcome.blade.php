@@ -15,5 +15,4 @@
     <div class="container mx-auto py-2">
         <router-view></router-view>
     </div>
-    
 @endsection

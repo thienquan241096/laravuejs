@@ -13,7 +13,7 @@ class TestController extends Controller
     public function message(Request $request)
     {
         // event(new Message($request->input('message'), $request->input('userName')));
-        
+        dd(1);
         return [];
     }
 }

@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::post('/test', [TestController::class, 'message']);
+Route::get('/test', [TestController::class, 'message']);
 
 Route::group(['prefix' => 'admin'], function () {
     Route::post('/login', [LoginController::class, 'login']);
